@@ -1,0 +1,645 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none !important;
+    list-style: none !important;
+    outline: none !important;
+}
+:root {
+    --background-grey : #f7f7f7; 
+}
+h1 , h2 , h3 , h4 , h5 , h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* start header */
+.header{
+    overflow: auto;
+    background-image: url("../imgs/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;
+}
+.header-layer {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(0, 0, 0 , 0.6);
+}
+.header-content {
+    color: white;
+}
+.header-content p span.blc {
+    font-weight: 200 !important ;
+    font-size: 4rem !important;
+} 
+.header-content p span.words-wrapper {
+    font-weight: 400 !important ;
+    font-size: 4rem !important;
+    font-family:  'Poppins', sans-serif;;
+}
+
+.header-content h5 {
+    font-size: 50px !important;
+    font-weight: 800 !important;
+    margin-bottom: 10px !important;
+}
+.header-content p span.words-wrapper:after {
+    content: "";
+    animation: typing 5s linear infinite  ;
+    -webkit-animation: typing 5s linear infinite;
+}
+/* Developer Designer */
+  @keyframes typing{
+    0%{
+      content: 'L|';
+    }
+   4%{
+      content: 'La|';
+    }
+    8%{
+        content: 'Lar|';
+    }
+   12%{
+        content: 'Larr |';
+    }
+    16%{
+        content: 'Larry|';
+    }
+    20%{
+        content: 'Larry |';
+    }
+    24%{
+        content: 'Larry D|';
+    }
+    28%{
+        content: 'Larry Da|';
+    }
+    32%{
+        content: 'Larry Dan|';
+    }
+    36%{
+        content: 'Larry Dani|';
+    }
+    40%{
+        content: 'Larry Danie|';
+    }
+    44%{
+        content: 'Larry Daniel|';
+     }
+     48%{
+        content: 'Larry Daniels|';
+     }
+     52%{
+        content: 'Larry Daniel|';
+      }
+     56%{
+        content: 'Larry Danie|';
+      }
+      70%{
+        content: 'Larry Dani|';
+      }
+      74%{
+        content: 'Larry Dan|';
+      }
+      78%{
+        content: 'Larry Da|';
+      }
+      81%{
+        content: 'Larry D|';
+      }
+      85%{
+        content: 'Larry |';
+      }
+      88%{
+        content: 'Larry|';
+      }
+      91%{
+        content: 'Larr|';
+      }
+      95%{
+        content: 'Lar|';
+      }
+      98%{
+        content: 'L|';
+    }
+    100%{
+        content: '|';
+    }
+  }
+  .header-social span  i {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .header-social span {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 10px;
+} 
+/* end header */
+/* start navbar */
+.navbar {
+    padding: 25px 0;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar > .container{
+    padding: 0 100px;
+    font-size: 1rem;
+}
+.navbar .navbar-brand{
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.navbar li {
+    font-size: 14px ;
+}
+.navbar-toggler-icon {
+    font-size: 20px;
+}
+@media only screen and (min-width: 992px)  {
+    .navbar li.line:after { 
+        content: "";
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+        background-color: #fff;
+        height: 2px;
+        width: 100%;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    .navbar .links {
+        background-color: #fff;
+        color: black;
+    }
+    .nav-link.active {
+        color: black !important;
+    }
+  }
+/* end navbar */
+/* start about */
+.layer-dots-1  {
+    background-image: url(../imgs/dots.png);
+    width: 7%;
+    height: 81%;
+    top: 26%;
+    left: -6%;
+}
+.layer-dots-2  {
+    background-image: url(../imgs/dots.png);
+    width: 77%;
+    height: 6%;
+    bottom: -7%;
+    left: 0%;
+}
+.row {
+    width: 85%;
+}
+.about-title h3{
+    font-weight: 800;
+    font-size:2rem  !important  ;
+    margin-bottom: 5px;
+}
+.about-title span {
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  .about-title p {
+        line-height: 1.6;
+        margin: 0;
+        font-size: 15px;
+        color: #748182;
+ }
+ .about-skill p  {
+    font-size: 13px;
+    font-weight: 400;
+ }
+.progress-skill  .percent-95{
+    width: 95% !important;
+}
+ .progress-skill .percent-80 {
+    width: 80%;
+}
+.progress-skill .percent-90 {
+    width: 90% !important;
+} 
+.progress-skill , .progress-rate {
+    height: 25px;
+}
+.progress-skill {
+    background-color:  var(--background-grey)!important;
+    box-shadow: 0px 2px 7px rgb(0 0 0 / 15%) rgba(0, 0, 0, 0.3) 0px 1px 3px -1px inset;
+}
+
+.about-btn .btn-1 , .about-btn .btn-2 {
+    font-size: 13px;
+    transition: background-color 1s ,color 1s ,border 1s  ;
+    -webkit-transition: background-color 1s ,color 1s ,border 1s  ;
+    -moz-transition: background-color 1s ,color 1s ,border 1s  ;
+    -ms-transition: background-color 1s ,color 1s ,border 1s  ;
+    -o-transition: background-color 1s ,color 1s ,border 1s  ;
+}
+.about-btn .btn-2 {
+    background-color: transparent;
+}
+.about-btn .btn-1:hover {
+    background-color: transparent !important;
+    color: black !important;
+    border: 1px solid dark !important;
+}
+.about-btn .btn-2:hover{
+    background-color: black !important;
+    color: #fff !important;
+    border: none !important;
+}
+/* end about */
+
+/* start Services */
+.services {
+    background-color: var(--background-grey);
+}
+.services h2 {
+    width: fit-content ;
+    background-image: url(../imgs/dots.png);
+    font-weight: 900;
+    font-size: 40px;
+}
+.services .card i {
+    font-size: 1.5rem;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    padding: 35px;
+    margin: 30px 0 10px;
+    width: 20px;
+    height: 20px;
+    transition: olor 1s  , background-color 1s;
+}
+.services .card:hover i {
+    background-color: black ;
+    color: #fff;
+}
+.card-body.card-title{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.4rem 0;
+    margin-bottom: 10px;
+}
+.card-body .card-text {
+    color: #4e4e4e;
+    margin-bottom: 1.3rem;
+}
+.services .card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.card-body h5  {
+    font-weight: 900;
+    font-size: 18px;
+}
+.card-body p  {
+    word-spacing: 2px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    color: #748182;
+  }
+/* end Services */
+
+/* start portfolio */
+.portfolio h2 {
+    width: fit-content ;
+    background-image: url(../imgs/dots.png);
+    font-weight: 900;
+    font-size: 40px;
+}
+.nav-pills .nav-link.active {
+    background-color: transparent;
+    position: relative;
+}
+.nav-pills .nav-link{
+    color: black !important;
+}
+.nav-pills .nav-link.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    bottom: 0%;
+    left: 0%;
+}
+.portfolio-area button {
+    background-color: transparent;
+    padding: 0;
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.portfolio .portfolio-icons  span  i {
+    width: 20px !important;
+    height: 20px !important;
+    color: #fff;
+  }
+  .portfolio .portfolio-icons  span {
+    background-color: rgb(0, 0, 0) !important;
+    color: #fff !important;
+    padding: 10px 10px !important;
+} 
+.portfolio .text {
+    top: 40%;
+    transition: top .5s .2s, opacity .5s .2s ;
+    -webkit-transition: top .5s .2s, opacity .5s .2s ;
+    -moz-transition: top .5s .2s, opacity .5s .2s ;
+    -ms-transition: top .5s .2s, opacity .5s .2s ;
+    -o-transition: top .5s .2s, opacity .5s .2s ;
+}
+.portfolio .image:hover .text  {
+    top: 45%;
+    opacity: 1 !important;
+}
+.portfolio .portfolio-icons {
+    top: 60%;
+    transition: top .5s .2s, opacity .5s .2s;
+    -webkit-transition: top .5s .2s, opacity .5s .2s;
+    -moz-transition: top .5s .2s, opacity .5s .2s;
+    -ms-transition: top .5s .2s, opacity .5s .2s;
+    -o-transition: top .5s .2s, opacity .5s .2s;
+}
+.portfolio .image:hover .portfolio-icons  {
+    top: 55%;
+    opacity: 1 !important;
+}
+.portfolio .image .layer {
+    transition: opacity .5s .3s,  background-color .5s .3s;
+    -webkit-transition: opacity .5s .3s,  background-color .5s .3s;
+    -moz-transition: opacity .5s .3s,  background-color .5s .3s;
+    -ms-transition: opacity .5s .3s,  background-color .5s .3s;
+    -o-transition: opacity .5s .3s,  background-color .5s .3s;
+}
+.portfolio .image:hover .layer {
+    opacity: 0.9 !important;
+    background-color: #fff !important;
+}
+.portfolio .image {
+    transition: border .5s;
+    -webkit-transition: border .5s;
+    -moz-transition: border .5s;
+    -ms-transition: border .5s;
+    -o-transition: border .5s;
+}
+.portfolio .image:hover {
+    border: 5px solid  #c4c3c3;
+}
+/* end portfolio */
+
+/* start Testimonials */
+.testimonial {
+    background-color: var(--background-grey);
+}
+.testimonial h2 {
+    width: fit-content ;
+    background-image: url(../imgs/dots.png);
+    font-weight: 900;
+    font-size: 40px;
+} 
+.testimonial  p{
+    word-spacing: 2px;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+.testimonial h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 5px;
+}
+.testimonial span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 30px;
+}
+.testimonial .carousel-item img {
+    width: 90px;
+    height: 90px;
+    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+}
+.testimonial .carousel-indicators img{
+    width: 100%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.testimonial .info {
+    width: 90%;
+}
+.testimonial .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    text-indent: 0;
+    border-radius: 50%; 
+}
+.testimonial .carousel-indicators [data-bs-target]  {
+    background-color: #D6D6D6;
+}
+.testimonial .carousel-indicators {
+    margin-top: -30px;
+}
+/* end Testimonials */
+
+/* start counter */
+.counter-ico .ico-circle {
+    padding: 25px;
+    margin: 30px 0 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 1.8;
+    font-size: 2rem;
+}
+.counter-ico .ico-circle i {
+    color: black;
+}
+.counter-num h3{
+    color: black;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.counter-num span{
+    color: #7c7c7c;
+    font-weight: 600;
+}
+/* end counter */
+/*start  blog */
+.blog {
+    background-color: var(--background-grey);
+}
+.blog .card img  {
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+}
+.blog .card:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+} 
+.blog h2 {
+    width: fit-content ;
+    background-image: url(../imgs/dots.png);
+    font-weight: 900;
+    font-size: 40px;
+}
+.testimonial h2 {
+    width: fit-content ;
+    background-image: url(../imgs/dots.png);
+}
+.blog .row {
+    width: 88%;
+}
+.blog .info {
+    width: 90%;
+}
+.blog .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    text-indent: 0;
+    border-radius: 50%; 
+}
+.blog .carousel-indicators [data-bs-target]  {
+    background-color: #a5a5a5;
+    margin-top: 50px;
+}
+.blog .carousel-indicators {
+    margin-top: -30px;
+}
+.blog .w-title {
+    color: rgb(131, 131, 131);
+    font-size: 13px;
+    font-weight: 500;
+}
+.w-ctegory {
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.w-link {
+    cursor: pointer;
+}
+.w-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    bottom: -4%;
+    left: 0%;
+}
+/* end blog */
+
+/*  start contact */
+.contact h2 {
+    width: fit-content ;
+    background-image: url(../imgs/dots.png);
+    font-weight: 900;
+    font-size: 40px;
+}
+.contact-ico i {
+    font-size: 1.7rem;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    padding: 30px;
+    margin: 30px 0 10px;
+    width: 30px;
+    height: 30px;
+    transition: olor 1s  , background-color 1s;
+}
+.contact-box:hover i{
+    background-color: black ;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+}
+.contact-num h6{
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: black;
+}
+.contact-num span{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+form .row {
+    width: 90% !important;
+}
+.input-1 , .input-2 {
+    box-sizing: border-box;
+}
+.contact .row input , textarea {
+    font-size: 14px;
+    outline-color: #20c997;
+    outline-width: thin;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    line-height: 1.42857143;
+    color: #656565;
+    background-color: #fff;
+    background-image: none;
+    border: none !important;
+    outline: none !important;
+    border-radius: 4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -ms-border-radius:4px;
+    -o-border-radius:4px;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    background-color: var(--background-grey);
+
+}
+form button {
+    font-size: 13px;
+    padding: 10px 37px;
+    transition: color 0.5s ,background-color .5s ,border .5s  ;
+    -webkit-transition: color 0.5s ,background-color .5s ,border .5s  ;
+    -moz-transition: color 0.5s ,background-color .5s ,border .5s  ;
+    -ms-transition: color 0.5s ,background-color .5s ,border .5s  ;
+    -o-transition: color 0.5s ,background-color .5s ,border .5s  ;
+}
+form button:hover {
+    color: black !important;
+    background-color: transparent !important ;
+    border: 1px solid black !important;
+}
+/*  end contact */
+
+/* start footer */
+.footer{
+    background-color :#1c1c1c
+}
+.footer p {
+    font-size: 13px;
+    color: #888;
+}
+
+ /* end footer */
